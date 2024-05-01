@@ -16,10 +16,10 @@
             <th scope="col" style="color: #02204A;">Nome</th>
             <th scope="col" style="color: #02204A;">Mãe</th>
             <th scope="col" style="color: #02204A;">C.Mãe</th>
-            <th scope="col" style="color: #02204A;">E.Mãe</th>
+            <!-- <th scope="col" style="color: #02204A;">E.Mãe</th> -->
             <th scope="col" style="color: #02204A;">Pai</th>
             <th scope="col" style="color: #02204A;">C.Pai</th>
-            <th scope="col" style="color: #02204A;">E.Pai</th>
+            <!-- <th scope="col" style="color: #02204A;">E.Pai</th> -->
             <th scope="col" style="color: #02204A;">Turma</th>
             <th scope="col" style="color: #02204A;">Endereço</th>
 
@@ -34,12 +34,15 @@
             <td>{{aluno.full_name_student}}</td>
             <td>{{aluno.mom_name}}</td>
             <td>{{aluno.mom_contact}}</td>
-            <td>{{aluno.mom_email}}</td>
+            <!-- <td>{{aluno.mom_email}}</td> -->
             <td>{{aluno.father_name}}</td>
             <td> {{aluno.father_contact}}</td>
-            <td>{{aluno.father_email}}</td>
+            <!-- <td>{{aluno.father_email}}</td> -->
             <td>{{aluno.classes}}</td>
-            <td>{{aluno.address}}</td>
+            <td>{{aluno.address}} <a href="/edit/{{dbs.aluno.id_aluno}}" class="btn btn-warning">Editar</a> <a href="#" class="btn btn-danger">Excluir</a></td>
+            
+            
+
           </tr>
           {% endfor%}
         </tbody>
